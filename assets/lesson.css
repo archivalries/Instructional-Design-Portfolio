@@ -9,7 +9,7 @@
 .block h2 { font-size: var(--step-2); border-bottom: 2px solid #5a1414; padding-bottom: 0.3rem; }
 :root[data-theme="dark"] .block h2 { border-bottom-color: var(--marigold); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .block h2 { border-bottom-color: var(--marigold); } }
-.block ul { margin: 0; padding-left: 1.25rem; display: grid; gap: 0.3rem; }
+.block ul:not(.tags) { margin: 0; padding-left: 1.25rem; display: grid; gap: 0.3rem; }
 .block figure { margin: 0 auto; display: block; text-align: center; max-width: 300px; }
 .block figure img { width: 300px; border-radius: var(--radius); }
 .block figcaption { font-size: var(--step--1); color: var(--muted); margin-top: 0.3rem; }
