@@ -31,6 +31,15 @@
   --step-3: 2rem;
   --step-4: 2.75rem;
   --radius: 6px;
+  --t-origin-bg: #fdf0d5; --t-origin-fg: #7a4e00; --t-origin-bd: #e9c77d;
+  --t-genre-bg: #ede6fb; --t-genre-fg: #4d2c91; --t-genre-bd: #c8b6ee;
+  --t-level-bg: #ddf3ea; --t-level-fg: #145c3e; --t-level-bd: #9fd7bf;
+  --t-cost-bg: #dfeefb; --t-cost-fg: #174f86; --t-cost-bd: #a9cbec;
+  --t-kind-bg: #eceff3; --t-kind-fg: #3f4b5a; --t-kind-bd: #cdd4de;
+  --t-ped-bg: #dfeefb; --t-ped-fg: #174f86; --t-ped-bd: #a9cbec;
+  --t-assess-bg: #ddf3ea; --t-assess-fg: #145c3e; --t-assess-bd: #9fd7bf;
+  --t-access-bg: #fdf0d5; --t-access-fg: #7a4e00; --t-access-bd: #e9c77d;
+  --t-design-bg: #fbe4ec; --t-design-fg: #8a1f48; --t-design-bd: #efb3c8;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -39,9 +48,27 @@
     --marigold: #f0b44a; --marigold-soft: #3a2c10; --on-navy: #e6ebf1; --link: #8fbcf2;
     --focus: #f0b44a; --ok: #6fd39a; --ok-soft: #12301f; --bad: #ff9a8f; --bad-soft: #3a1714;
     --haber: #ff8f86; --participle: #9dbaff; color-scheme: dark;
+    --t-origin-bg: #3a2c10; --t-origin-fg: #f6cf86; --t-origin-bd: #6b5220;
+    --t-genre-bg: #2a2140; --t-genre-fg: #cbb8f5; --t-genre-bd: #4c3d73;
+    --t-level-bg: #12301f; --t-level-fg: #8fe0b8; --t-level-bd: #285a40;
+    --t-cost-bg: #142a40; --t-cost-fg: #9cc8f2; --t-cost-bd: #2a4c6e;
+    --t-kind-bg: #1f2a38; --t-kind-fg: #b7c2cf; --t-kind-bd: #354457;
+    --t-ped-bg: #142a40; --t-ped-fg: #9cc8f2; --t-ped-bd: #2a4c6e;
+    --t-assess-bg: #12301f; --t-assess-fg: #8fe0b8; --t-assess-bd: #285a40;
+    --t-access-bg: #3a2c10; --t-access-fg: #f6cf86; --t-access-bd: #6b5220;
+    --t-design-bg: #3a1726; --t-design-fg: #f3a9c4; --t-design-bd: #6b2c45;
   }
 }
 :root[data-theme="dark"] {
+  --t-origin-bg: #3a2c10; --t-origin-fg: #f6cf86; --t-origin-bd: #6b5220;
+  --t-genre-bg: #2a2140; --t-genre-fg: #cbb8f5; --t-genre-bd: #4c3d73;
+  --t-level-bg: #12301f; --t-level-fg: #8fe0b8; --t-level-bd: #285a40;
+  --t-cost-bg: #142a40; --t-cost-fg: #9cc8f2; --t-cost-bd: #2a4c6e;
+  --t-kind-bg: #1f2a38; --t-kind-fg: #b7c2cf; --t-kind-bd: #354457;
+  --t-ped-bg: #142a40; --t-ped-fg: #9cc8f2; --t-ped-bd: #2a4c6e;
+  --t-assess-bg: #12301f; --t-assess-fg: #8fe0b8; --t-assess-bd: #285a40;
+  --t-access-bg: #3a2c10; --t-access-fg: #f6cf86; --t-access-bd: #6b5220;
+  --t-design-bg: #3a1726; --t-design-fg: #f3a9c4; --t-design-bd: #6b2c45;
   --navy: #9fbbe0; --navy-deep: #0d1828; --ink: #e6ebf1; --muted: #aab5c3;
   --paper: #0f1722; --surface: #162131; --surface-alt: #1b293c; --line: #2c3b50;
   --marigold: #f0b44a; --marigold-soft: #3a2c10; --on-navy: #e6ebf1; --link: #8fbcf2;
@@ -140,3 +167,18 @@ footer.site { padding-block: 2rem; color: var(--muted); font-size: var(--step--1
 .ratio iframe { position: absolute; inset: 0; height: 100%; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
+
+/* Colour-coded pills */
+.tags { align-items: flex-start; }
+.tags li { width: auto; flex: 0 0 auto; }
+.t-origin { background: var(--t-origin-bg) !important; color: var(--t-origin-fg) !important; border-color: var(--t-origin-bd) !important; }
+.t-genre { background: var(--t-genre-bg) !important; color: var(--t-genre-fg) !important; border-color: var(--t-genre-bd) !important; }
+.t-level { background: var(--t-level-bg) !important; color: var(--t-level-fg) !important; border-color: var(--t-level-bd) !important; }
+.t-cost { background: var(--t-cost-bg) !important; color: var(--t-cost-fg) !important; border-color: var(--t-cost-bd) !important; }
+.t-kind { background: var(--t-kind-bg) !important; color: var(--t-kind-fg) !important; border-color: var(--t-kind-bd) !important; }
+.t-ped { background: var(--t-ped-bg) !important; color: var(--t-ped-fg) !important; border-color: var(--t-ped-bd) !important; }
+.t-assess { background: var(--t-assess-bg) !important; color: var(--t-assess-fg) !important; border-color: var(--t-assess-bd) !important; }
+.t-access { background: var(--t-access-bg) !important; color: var(--t-access-fg) !important; border-color: var(--t-access-bd) !important; }
+.t-design { background: var(--t-design-bg) !important; color: var(--t-design-fg) !important; border-color: var(--t-design-bd) !important; }
+.legend { display: flex; flex-wrap: wrap; gap: 0.5rem 0.75rem; align-items: center; margin-bottom: 1.25rem; font-size: var(--step--1); color: var(--muted); }
+.legend > span { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
